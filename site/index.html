@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project Thrive — making financial literacy accessible across Bengaluru."
+    />
+    <title>Project Thrive — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div id="site-header"></div>
+
+    <main id="main-content">
+      <section class="hero hero--editorial" id="hero">
+        <div class="hero__ambient" aria-hidden="true">
+          <div class="hero__blob hero__blob--a"></div>
+          <div class="hero__blob hero__blob--b"></div>
+          <div class="hero__blob hero__blob--c"></div>
+        </div>
+        <div class="hero__media" aria-hidden="true">
+          <!-- Camp photo: same CDN as projectthrive.in so hero works before local `npm run download` -->
+          <img
+            class="hero__bg-photo"
+            src="https://www.projectthrive.in/lovable-uploads/sobha-1.jpg"
+            alt=""
+            width="1600"
+            height="1067"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <div class="hero__bg-mesh"></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__shell">
+          <div class="hero__grid">
+            <div class="hero__copy">
+              <span class="hero__rail" aria-hidden="true"></span>
+              <div class="hero__kicker">
+                <span class="hero__kicker-line" aria-hidden="true"></span>
+                <span class="hero__kicker-text">Project Thrive · Bengaluru</span>
+              </div>
+              <p class="hero__loc-jot">
+                Field notes — the camp photo and testimonial clip are from our
+                Prestige Pinewood &amp; APR Bengaluru sessions with SBI and community
+                partners, not a stock library.
+              </p>
+              <ul class="hero__pills" aria-label="Program highlights">
+                <li class="hero__pill">100% free programs</li>
+                <li class="hero__pill">5 languages</li>
+                <li class="hero__pill">SBI &amp; community partners</li>
+              </ul>
+              <h1 class="hero__title">
+                <span class="hero__title-line">Financial literacy</span>
+                <span class="hero__title-line hero__title-line--emph">
+                  that meets people
+                  <abbr title="and" class="hero__amp">&amp;</abbr>
+                  where they are.
+                </span>
+              </h1>
+              <p class="hero__tagline">
+                Camps, mentorship, and scheme navigation—with the same field
+                stories you see on projectthrive.in, not generic stock shots.
+              </p>
+              <div class="btn-row hero__actions">
+                <a class="btn btn--primary btn--hero" href="get-involved.html#donate"
+                  >Start making impact</a
+                >
+                <a class="btn btn--ghost btn--hero-secondary" href="impact.html"
+                  >See our impact</a
+                >
+              </div>
+            </div>
+
+            <div class="hero__showcase">
+              <div class="hero__video-stage" data-reveal>
+                <div class="hero__video-chrome" aria-hidden="true">
+                  <span>Community voices</span>
+                </div>
+                <div class="hero__video-inner">
+                  <video
+                    class="hero__video hero__video--framed"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="https://www.projectthrive.in/lovable-uploads/fe5a0802-1427-4098-8e0f-6b30e53b1d10.png"
+                  >
+                    <source src="videos/testimonial-prestige-1.mp4" type="video/mp4" />
+                    <source
+                      src="https://www.projectthrive.in/lovable-uploads/testimonial-prestige-1.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+
+              <aside class="hero__stats-panel" data-reveal>
+                <div class="hero__stats-panel__top">
+                  <span class="hero__stats-label">Lives changed</span>
+                  <span class="hero__stats-hero" aria-hidden="true">462+</span>
+                </div>
+                <ul class="hero__stats-list">
+                  <li>
+                    <strong>500+</strong>
+                    <span>Bank accounts opened</span>
+                  </li>
+                  <li>
+                    <strong>3</strong>
+                    <span>Major partnerships</span>
+                  </li>
+                  <li>
+                    <strong>5</strong>
+                    <span>Languages in the room</span>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section--photo"
+        data-parallax-section
+        id="impact-numbers"
+      >
+        <div
+          class="section__parallax-bg"
+          style="background-image: url('https://www.projectthrive.in/lovable-uploads/sobha-2.jpg')"
+        ></div>
+        <div class="section__scrim"></div>
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Real-Time Impact</p>
+            <h2 class="section__title">Our Impact in Numbers</h2>
+            <p class="section__sub">
+              Every number represents a life changed, a family empowered, and a
+              future secured. Updated as our programs grow.
+            </p>
+            <p class="tag">Updated: June 2025</p>
+          </div>
+          <div class="bento">
+            <div class="bento__item bento__item--wide card" data-reveal>
+              <span class="bento__value" data-count="462">0</span>
+              <span class="bento__label">Lives empowered</span>
+            </div>
+            <div class="bento__item card" data-reveal>
+              <span class="bento__value" data-count="500">0</span>
+              <span class="bento__label">Bank accounts opened</span>
+            </div>
+            <div class="bento__item card" data-reveal>
+              <span class="bento__value" data-count="550">0</span>
+              <span class="bento__label">Insurance enrollments</span>
+            </div>
+            <div class="bento__item card" data-reveal>
+              <span class="bento__value">₹15L+</span>
+              <span class="bento__label">Total financial impact</span>
+            </div>
+            <div class="bento__item card" data-reveal>
+              <span class="bento__value" data-count="50">0</span>
+              <span class="bento__label">Volunteer hours</span>
+            </div>
+            <div class="bento__item card" data-reveal>
+              <span class="bento__value" data-count="3">0</span>
+              <span class="bento__label">Partner organizations</span>
+            </div>
+          </div>
+          <p class="photo-credit" data-reveal>
+            Photography mirrored from Project Thrive field programs (same assets as
+            projectthrive.in).
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--photo" data-parallax-section>
+        <div
+          class="section__parallax-bg"
+          style="background-image: url('https://www.projectthrive.in/lovable-uploads/sobha-5.jpg')"
+        ></div>
+        <div class="section__scrim"></div>
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Real Stories, Real Impact</p>
+            <h2 class="section__title">Meet Those We’ve Empowered</h2>
+            <p class="section__sub">
+              Behind every statistic is a person, a family, a dream realized.
+            </p>
+          </div>
+          <article class="story card card--lift" data-reveal>
+            <p class="eyebrow">Success story</p>
+            <h3 class="story__title">From Uncertainty to Financial Security</h3>
+            <blockquote class="story__quote">
+              <p>
+                Before Project Thrive’s camp at APR Bengaluru, I had never set
+                foot in a bank. The concept of savings, insurance, or pension
+                plans felt like a distant reality meant for others.
+              </p>
+              <p>
+                Today, she has a savings account, health insurance for her
+                family, and is actively contributing to a pension scheme. Her
+                children’s education is secured, and for the first time, she
+                feels prepared for emergencies.
+              </p>
+            </blockquote>
+            <p class="story__foot">
+              This transformation happened in just one afternoon—but its impact
+              will last a lifetime.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--ghost" href="impact.html">Watch more stories</a>
+              <a class="btn btn--link" href="about.html#process">See how we help</a>
+            </div>
+          </article>
+
+          <div class="metrics-row" data-reveal>
+            <div class="metric-pill">
+              <strong>80%</strong>
+              <span>Previously unbanked now have accounts</span>
+            </div>
+            <div class="metric-pill">
+              <strong>550</strong>
+              <span>Health insurance enrollments completed</span>
+            </div>
+            <div class="metric-pill">
+              <strong>100%</strong>
+              <span>Report increased financial confidence</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--photo" data-parallax-section id="process">
+        <div
+          class="section__parallax-bg"
+          style="background-image: url('https://www.projectthrive.in/lovable-uploads/sobha-3.jpg')"
+        ></div>
+        <div class="section__scrim"></div>
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Our Proven Process</p>
+            <h2 class="section__title">How We Create Lasting Change</h2>
+            <p class="section__sub">
+              A simple yet powerful three-step approach that has transformed
+              hundreds of lives.
+            </p>
+          </div>
+          <div class="process-strip" id="process-strip">
+            <div class="process-panel card">
+              <span class="process-panel__index">01</span>
+              <h3>We Educate</h3>
+              <p>
+                Multilingual financial literacy sessions that break down complex
+                concepts into simple, actionable knowledge.
+              </p>
+            </div>
+            <div class="process-panel card">
+              <span class="process-panel__index">02</span>
+              <h3>We Empower</h3>
+              <p>
+                Hands-on assistance with bank accounts, government scheme
+                enrollment, and digital banking setup.
+              </p>
+            </div>
+            <div class="process-panel card">
+              <span class="process-panel__index">03</span>
+              <h3>We Transform</h3>
+              <p>
+                Ongoing support and resources for lasting financial security and
+                generational wellbeing.
+              </p>
+            </div>
+          </div>
+          <div class="process-meta" data-reveal>
+            <span><strong>5</strong> languages</span>
+            <span><strong>3</strong> major camps</span>
+            <span><strong>50+</strong> volunteers</span>
+            <span><strong>100%</strong> free service</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--lavender" id="voices">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Trusted by Community</p>
+            <h2 class="section__title">Voices of Transformation</h2>
+            <p class="section__sub">
+              The same testimonial clips and posters used on projectthrive.in
+              (Prestige Pinewood &amp; APR Bengaluru).
+            </p>
+          </div>
+
+          <div class="video-testimonial-grid">
+            <article class="video-card card card--lift" data-reveal>
+              <div class="video-card__frame">
+                <video
+                  controls
+                  playsinline
+                  poster="images/thumb-prestige-pinewood.png"
+                  aria-label="Prestige Pinewood community testimonial video"
+                >
+                  <source
+                    src="videos/testimonial-prestige-1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="video-card__meta">
+                <strong>Prestige Pinewood</strong>
+                <span>Community member</span>
+              </div>
+            </article>
+            <article class="video-card card card--lift" data-reveal>
+              <div class="video-card__frame">
+                <video
+                  controls
+                  playsinline
+                  poster="images/thumb-apr-bengaluru.png"
+                  aria-label="APR Bengaluru domestic worker testimonial video"
+                >
+                  <source
+                    src="videos/testimonial-prestige-2.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <div class="video-card__meta">
+                <strong>APR Bengaluru</strong>
+                <span>Domestic worker</span>
+              </div>
+            </article>
+          </div>
+          <p class="form-note" data-reveal>
+            Videos are the same files served on projectthrive.in — use controls to
+            play and adjust sound.
+          </p>
+
+          <div class="testimonial-grid">
+            <figure class="testimonial card" data-reveal>
+              <figcaption>
+                <strong>State Bank of India</strong>
+                <span>Green Glen Layout Branch</span>
+              </figcaption>
+              <blockquote>
+                We extend our heartfelt thanks to Mr. Aarin Pathak for
+                collaborating with SBI to organize a financial literacy camp that
+                reached about 80 individuals, majorly underprivileged women.
+              </blockquote>
+            </figure>
+            <figure class="testimonial card" data-reveal>
+              <figcaption>
+                <strong>APR Charitable Trust</strong>
+                <span>Meenakshi Yeri, Treasurer</span>
+              </figcaption>
+              <blockquote>
+                The efforts and dedication shown by the entire team in
+                coordinating and executing this camp is truly commendable.
+              </blockquote>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Trusted Partners</p>
+            <h2 class="section__title">Collaborating for Inclusion</h2>
+            <p class="section__sub">
+              Banks, trusts, and NGOs that co-host camps, lend credibility, and
+              extend last-mile services — the same collaborators featured on
+              projectthrive.in.
+            </p>
+          </div>
+
+          <div class="trust-strip" data-reveal>
+            <div class="trust-strip__item">
+              <span class="trust-strip__badge" aria-hidden="true">🏦</span>
+              <div>
+                <strong>State Bank of India</strong>
+                <span>Green Glen Layout &amp; field teams</span>
+              </div>
+            </div>
+            <div class="trust-strip__item">
+              <span class="trust-strip__badge" aria-hidden="true">🤝</span>
+              <div>
+                <strong>ACT Foundation</strong>
+                <span>APR Charitable Trust</span>
+              </div>
+            </div>
+            <div class="trust-strip__item">
+              <span class="trust-strip__badge" aria-hidden="true">🌟</span>
+              <div>
+                <strong>Sampark NGO</strong>
+                <span>Grassroots outreach</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="partner-grid" data-reveal>
+            <div class="partner card">
+              <h3>State Bank of India</h3>
+              <p>Banking expertise and service access.</p>
+            </div>
+            <div class="partner card">
+              <h3>ACT (APR Charitable Trust)</h3>
+              <p>Community connections and camp hosts.</p>
+            </div>
+            <div class="partner card">
+              <h3>Sampark NGO</h3>
+              <p>Grassroots outreach and field support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section--donate section--photo"
+        data-parallax-section
+        id="donate-home"
+      >
+        <div
+          class="section__parallax-bg"
+          style="background-image: url('https://www.projectthrive.in/lovable-uploads/sobha-4.jpg')"
+        ></div>
+        <div class="section__scrim"></div>
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Make an Impact Today</p>
+            <h2 class="section__title">Your Contribution Creates Lasting Change</h2>
+            <p class="section__sub">
+              Every donation directly empowers individuals with financial
+              knowledge and security.
+            </p>
+          </div>
+          <div class="donate-grid">
+            <div class="donate-tier card card--lift" data-reveal>
+              <h3>₹500</h3>
+              <p class="donate-tier__name">Educate 1 Person</p>
+              <p class="muted">
+                Comprehensive financial literacy training for one individual.
+              </p>
+              <a class="btn btn--ghost btn--block" href="get-involved.html#donate"
+                >Choose this</a
+              >
+            </div>
+            <div class="donate-tier card card--lift card--popular" data-reveal>
+              <span class="badge">Most popular</span>
+              <h3>₹2,500</h3>
+              <p class="donate-tier__name">Empower a Family</p>
+              <p class="muted">
+                Bank account setup and scheme enrollment for a whole family.
+              </p>
+              <a class="btn btn--primary btn--block" href="get-involved.html#donate"
+                >Choose this</a
+              >
+            </div>
+            <div class="donate-tier card card--lift" data-reveal>
+              <h3>₹10,000</h3>
+              <p class="donate-tier__name">Transform a Community</p>
+              <p class="muted">
+                Sponsor a full camp reaching 30+ community members.
+              </p>
+              <a class="btn btn--ghost btn--block" href="get-involved.html#donate"
+                >Choose this</a
+              >
+            </div>
+          </div>
+          <div class="donate-custom card" data-reveal>
+            <h3>Choose your own amount</h3>
+            <p class="muted">
+              Every contribution, no matter the size, makes a real difference.
+            </p>
+            <ul class="trust-list">
+              <li><strong>100% transparent</strong> — see where funds go</li>
+              <li><strong>Direct impact</strong> — programs-first spending</li>
+              <li><strong>Regular updates</strong> — impact you can track</li>
+            </ul>
+            <a class="btn btn--primary" href="get-involved.html#donate"
+              >Donate custom amount</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--photo section--photo--soft" data-parallax-section>
+        <div
+          class="section__parallax-bg"
+          style="background-image: url('https://www.projectthrive.in/lovable-uploads/2a7a7cdf-3d80-40b1-95c4-63329209ee98.png')"
+        ></div>
+        <div class="section__scrim section__scrim--soft"></div>
+        <div class="container narrow">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">Our Story</p>
+            <h2 class="section__title">Founded with Purpose</h2>
+            <p class="section__sub">
+              Founded by Aarin Pathak, Project Thrive recognizes that financial
+              exclusion perpetuates inequality. Since 2024, we’ve worked to
+              dismantle barriers that keep low-income families out of mainstream
+              financial systems—government programs, savings, digital payments,
+              and responsible money habits.
+            </p>
+            <a class="btn btn--link" href="about.html">Learn more about us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-band__inner" data-reveal>
+          <div>
+            <h2 class="cta-band__title">Ready to Make a Difference?</h2>
+            <p class="muted">
+              Join the movement transforming financial literacy in Bengaluru.
+            </p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="get-involved.html">Support the cause</a>
+            <a class="btn btn--ghost" href="contact.html">Contact us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

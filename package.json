@@ -1,0 +1,13 @@
+{
+  "name": "project_thrive",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project Thrive — static site (HTML / CSS / JS). Dev server on port 3333.",
+  "scripts": {
+    "dev": "serve site -l 3333",
+    "start": "serve site -l 3333"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Involved — Project Thrive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="involved">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div id="site-header"></div>
+
+    <main id="main-content">
+      <header class="page-hero container" data-reveal>
+        <p class="eyebrow">Get Involved</p>
+        <h1 class="page-hero__title">Ways to Make Financial Inclusion Real</h1>
+        <p class="page-hero__sub">
+          Donate, volunteer, or partner. Every pathway expands free, multilingual
+          literacy for communities who ask for it.
+        </p>
+      </header>
+
+      <section class="section section--alt" id="impact-preview">
+        <div class="container">
+          <h2 class="section__title" data-reveal>See Our Impact</h2>
+          <p class="section__sub" data-reveal>
+            Recent camps you can reference when pitching collaborators.
+          </p>
+          <div class="grid-2" style="margin-top: 1.5rem">
+            <article class="card" data-reveal>
+              <h3 style="font-family: var(--font-display)">APR Bengaluru Camp</h3>
+              <p class="muted">
+                SBI-backed camp serving ~80 participants, majority women, with
+                account-opening and insurance education.
+              </p>
+            </article>
+            <article class="card" data-reveal>
+              <h3 style="font-family: var(--font-display)">Prestige Pinewood Camp</h3>
+              <p class="muted">
+                Residential cohorts learning savings, digital hygiene, and scheme
+                eligibility in a trusted neighborhood setting.
+              </p>
+            </article>
+            <article class="card" data-reveal>
+              <h3 style="font-family: var(--font-display)">Sobha Forest Edge Camp</h3>
+              <p class="muted">
+                Cohort-based storytelling plus documentation clinics for sustained
+                follow-through.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="volunteer">
+        <div class="container grid-2">
+          <div data-reveal>
+            <h2 class="section__title">Volunteer With Us</h2>
+            <p class="section__sub">
+              We need multilingual facilitators, notetakers, registration desk
+              help, and post-camp follow-up buddies.
+            </p>
+            <div class="pillars" style="margin-top: 1rem">
+              <div class="pillar">
+                <strong>Volunteer opportunities</strong>
+                <span>Camp days (6–8 hrs), remote translation, curriculum QA.</span>
+              </div>
+              <div class="pillar">
+                <strong>What you’ll get</strong>
+                <span>Training deck, safeguarding brief, volunteer hours letter.</span>
+              </div>
+            </div>
+            <p class="muted" style="margin-top: 1rem">
+              Meet leads on the
+              <a href="meet-the-team.html" style="color: var(--violet-700); font-weight: 700"
+                >Meet the Team</a
+              >
+              page once bios publish.
+            </p>
+          </div>
+          <div class="card" data-reveal>
+            <h3 style="font-family: var(--font-display)">Volunteer sign-up</h3>
+            <p class="form-note">
+              Wire this form to Formspree, Google Forms, or your CRM. Fields are
+              ready for export.
+            </p>
+            <form id="volunteer-form" class="form" style="margin-top: 1rem">
+              <label>
+                Full name
+                <input name="name" type="text" required autocomplete="name" />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" required autocomplete="email" />
+              </label>
+              <label>
+                Phone / WhatsApp
+                <input name="phone" type="tel" autocomplete="tel" />
+              </label>
+              <label>
+                Languages
+                <input name="languages" type="text" placeholder="Kannada, Hindi, English…" />
+              </label>
+              <label>
+                Availability
+                <select name="availability">
+                  <option value="">Select…</option>
+                  <option value="weekdays">Weekdays</option>
+                  <option value="weekends">Weekends</option>
+                  <option value="both">Both</option>
+                </select>
+              </label>
+              <label>
+                Notes
+                <textarea name="notes" placeholder="Skills, campus/college, referrals"></textarea>
+              </label>
+              <button class="btn btn--primary btn--block" type="submit">
+                Submit interest
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="donate">
+        <div class="container">
+          <h2 class="section__title" data-reveal>Donate</h2>
+          <p class="section__sub" data-reveal>
+            Preset tiers mirror the public site. Connect buttons to Razorpay,
+            GiveIndia, or your 80G-compliant processor.
+          </p>
+          <div class="donate-grid" style="margin-top: 2rem">
+            <div class="donate-tier card card--lift" data-reveal>
+              <h3>₹500</h3>
+              <p class="donate-tier__name">Educate 1 Person</p>
+              <p class="muted">
+                Trainer stipends, printing, and participant kits for one learner.
+              </p>
+              <button class="btn btn--ghost btn--block" type="button" data-donate="500">
+                Donate ₹500
+              </button>
+            </div>
+            <div class="donate-tier card card--lift card--popular" data-reveal>
+              <span class="badge">Most selected</span>
+              <h3>₹2,500</h3>
+              <p class="donate-tier__name">Empower a Family</p>
+              <p class="muted">
+                Covers guided account + insurance conversations for a household.
+              </p>
+              <button class="btn btn--primary btn--block" type="button" data-donate="2500">
+                Donate ₹2,500
+              </button>
+            </div>
+            <div class="donate-tier card card--lift" data-reveal>
+              <h3>₹10,000</h3>
+              <p class="donate-tier__name">Transform a Community</p>
+              <p class="muted">Sponsors a camp segment reaching 30+ residents.</p>
+              <button class="btn btn--ghost btn--block" type="button" data-donate="10000">
+                Donate ₹10,000
+              </button>
+            </div>
+          </div>
+          <div class="donate-custom card" data-reveal style="margin-top: 2rem">
+            <h3>Choose your own amount</h3>
+            <p class="muted">
+              Drop in your payment link or embed once compliance review finishes.
+            </p>
+            <div class="btn-row" style="margin-top: 0.5rem">
+              <button class="btn btn--primary" type="button" data-donate="custom">
+                Configure custom checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="partner">
+        <div class="container">
+          <h2 class="section__title" data-reveal>Partner With Us</h2>
+          <p class="section__sub" data-reveal>
+            Corporate CSR desks, trusts, and resident associations amplify our
+            free-to-community promise.
+          </p>
+          <div class="grid-2" style="margin-top: 1.5rem">
+            <article class="card" data-reveal>
+              <h3 style="font-family: var(--font-display)">Corporate partnerships</h3>
+              <p class="muted">
+                Employee volunteer days, matched giving, and joint impact reporting.
+              </p>
+            </article>
+            <article class="card" data-reveal>
+              <h3 style="font-family: var(--font-display)">Institutional partnerships</h3>
+              <p class="muted">
+                Schools, RWAs, and NGOs hosting camps with shared safeguarding SOPs.
+              </p>
+            </article>
+          </div>
+          <div class="partner-grid" style="margin-top: 2rem">
+            <div class="partner card" data-reveal>
+              <h3>State Bank of India</h3>
+              <p>Banking expertise and service access.</p>
+            </div>
+            <div class="partner card" data-reveal>
+              <h3>ACT Foundation</h3>
+              <p>Community introductions and trusted venues.</p>
+            </div>
+            <div class="partner card" data-reveal>
+              <h3>Sampark NGO</h3>
+              <p>Grassroots participant follow-up.</p>
+            </div>
+          </div>
+          <div class="btn-row" data-reveal>
+            <a class="btn btn--primary" href="mailto:partners@projectthrive.in"
+              >Email partnerships</a
+            >
+            <a class="btn btn--ghost" href="contact.html">Contact hub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module">
+      document.querySelectorAll("[data-donate]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const amt = btn.getAttribute("data-donate");
+          alert(
+            `Placeholder: connect ₹${amt} to Razorpay / GiveIndia. Update data attributes with real links.`,
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

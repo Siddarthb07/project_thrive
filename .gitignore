@@ -1,0 +1,11 @@
+node_modules
+.next
+dist
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+
+# Stray single-file export (not part of static site)
+/_
