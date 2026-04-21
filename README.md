@@ -11,19 +11,13 @@ npm install
 npm run dev
 ```
 
-Open **http://localhost:3333** — the `serve` package serves the `site/` folder.
+Open **http://localhost:3333** — `serve` publishes the **repository root** (where `index.html` lives).
 
-## Assets
+## Layout
 
-Camp and community photos under `site/images/` were **downloaded from the live site** (`projectthrive.in` / `lovable-uploads/`). Re-run if the upstream filenames change:
-
-```bash
-node tools/download-pt-images.mjs
-```
-
+Static pages and assets live at the **repo root** so **GitHub Pages “Deploy from branch” / (root)** works without extra build steps:
 
 ```
-site/
   index.html          # Home
   about.html
   impact.html
@@ -36,28 +30,39 @@ site/
   partials/
     header.html
     footer.html
+  images/
+```
+
+Repo metadata (`package.json`, `tools/`, this `README.md`) sits beside those files; they are not linked from the site.
+
+## Assets
+
+Camp and community photos under `images/` can be **mirrored from the live site** (`projectthrive.in` / `lovable-uploads/`). Re-run if upstream filenames change:
+
+```bash
+node tools/download-pt-images.mjs
+# optional: videos + posters
+node tools/download-all-media.mjs
 ```
 
 Partials are loaded via `fetch()`; use a local server (`npm run dev`), not `file://`.
 
 ## Deploy
 
-### GitHub Pages (this repo)
+### GitHub Pages
 
-The live HTML/CSS/JS lives in **`site/`**, not the repository root (the root has `package.json`, `README.md`, and `tools/`). GitHub’s default “Deploy from branch” only serves the **root** or **`/docs`**, so it would show the README instead of the site.
+1. **Settings → Pages → Build and deployment**
+2. **Source**: **Deploy from a branch**
+3. **Branch**: `main`, folder **`/` (root)**
+4. Save.
 
-**Use GitHub Actions** (workflow included):
+With `index.html` at the root, **`https://siddarthb07.github.io/project_thrive/`** loads the site. A **`.nojekyll`** file is included so GitHub does not run Jekyll on the static files.
 
-1. Push the latest `main` branch (includes `.github/workflows/deploy-pages.yml`).
-2. On GitHub: **Settings → Pages → Build and deployment**.
-3. Under **Source**, choose **GitHub Actions** (not “Deploy from a branch”).
-4. Open the **Actions** tab and confirm the **Deploy GitHub Pages** workflow succeeds.
-
-Your site will be at **`https://siddarthb07.github.io/project_thrive/`** (GitHub normalizes the hostname; replace with your username if it differs).
+If you previously used **GitHub Actions** as the Pages source, switch it to **Deploy from a branch** after this layout change (otherwise the old workflow will conflict or serve the wrong tree).
 
 ### Other hosts
 
-Upload the **contents** of **`site/`** (not the whole monorepo) to Cloudflare Pages, Netlify, S3, etc.
+Point the host at the repo root (same paths as above), or upload only the static files (`*.html`, `css/`, `js/`, `partials/`, `images/`, `videos/`).
 
 ## Next steps for the NGO
 

@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const base = "https://www.projectthrive.in";
-const root = path.join(__dirname, "..", "site");
+const root = path.join(__dirname, "..");
 const imgDir = path.join(root, "images");
 const vidDir = path.join(root, "videos");
 

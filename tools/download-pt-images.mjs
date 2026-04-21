@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const outDir = path.join(__dirname, "..", "site", "images");
+const outDir = path.join(__dirname, "..", "images");
 const base = "https://www.projectthrive.in";
 
 const files = [

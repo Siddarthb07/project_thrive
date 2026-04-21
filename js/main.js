@@ -173,7 +173,7 @@ function initParallaxBackgrounds() {
 }
 
 async function boot() {
-  const base = ""; // served from site root
+  const base = ""; // static assets at repo root
   await loadPartial("site-header", `${base}partials/header.html`);
   await loadPartial("site-footer", `${base}partials/footer.html`);
 
