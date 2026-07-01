@@ -9,3 +9,6 @@ Thumbs.db
 
 # Stray single-file export (not part of static site)
 /_
+# Local media mirrors (fetch via tools/download-all-media.mjs)
+images/
+videos/
