@@ -1,6 +1,8 @@
 # Project Thrive — static website
 
-Financial literacy NGO site built with **plain HTML, CSS, and JavaScript** (no React/Next). Lilac theme, smooth scrolling (Lenis), scroll reveals (GSAP), and a lightweight **Three.js** hero on the home page.
+Financial literacy NGO site built with **plain HTML, CSS, and JavaScript** (no React/Next). "Rooted Forest" design — deep forest ink, living green and marigold gold on light surfaces, Bricolage Grotesque + Instrument Sans — with smooth scrolling (Lenis), scroll reveals (GSAP ScrollTrigger), and a low-cost **Three.js** "growth field" layered over the full-bleed hero film. Design tokens are documented at the top of `css/style.css`.
+
+This is a **design mockup**: donation picker and forms are UI-only, and core volunteer portraits/roles are placeholders.
 
 ## Run locally (port **3333**)
 
@@ -26,7 +28,8 @@ Static pages and assets live at the **repo root** so **GitHub Pages “Deploy fr
   meet-the-team.html
   css/style.css
   js/main.js          # Partials, nav, Lenis, GSAP, forms placeholder
-  js/hero-3d.js       # Home hero (Three.js, ES module)
+  js/hero-3d.js       # Retired stub (particle field removed)
+  images/team/        # Leadership portraits
   partials/
     header.html
     footer.html
@@ -37,7 +40,7 @@ Repo metadata (`package.json`, `tools/`, this `README.md`) sits beside those fil
 
 ## Assets
 
-Camp and community photos under `images/` can be **mirrored from the live site** (`projectthrive.in` / `lovable-uploads/`). Re-run if upstream filenames change:
+Photos and testimonial videos are loaded directly from the live site's CDN (`https://www.projectthrive.in/lovable-uploads/`), so no local download is needed. To self-host instead, mirror them into `images/` / `videos/` and update the URLs:
 
 ```bash
 node tools/download-pt-images.mjs

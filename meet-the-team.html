@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Meet the founder and leadership team behind Project Thrive." />
+    <meta name="theme-color" content="#0a1f33" />
     <title>Meet the Team — Project Thrive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-page="team">
@@ -17,59 +16,230 @@
     <div id="site-header"></div>
 
     <main id="main-content">
-      <header class="page-hero container" data-reveal>
-        <p class="eyebrow">Meet the Team</p>
-        <h1 class="page-hero__title">Dedicated Change-Makers</h1>
-        <p class="page-hero__sub">
-          Photo and bio placeholders—swap in real portraits and copy when ready
-          without touching layout code.
-        </p>
+      <header class="page-hero page-hero--short">
+        <div class="page-hero__media" data-parallax>
+          <img
+            src="https://www.projectthrive.in/lovable-uploads/bad9b5e3-250a-4839-ba02-3be0336ece76.png"
+            alt="Volunteers helping community members with registrations"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="container page-hero__content">
+          <p class="eyebrow eyebrow--light" data-hero-in>Meet the team</p>
+          <h1 class="page-hero__title" data-hero-in>The people behind every camp.</h1>
+          <p class="page-hero__sub" data-hero-in>
+            A youth-led leadership group running financial literacy camps across
+            Bengaluru — free, multilingual, and built with partners on the ground.
+          </p>
+        </div>
       </header>
 
-      <section class="section">
-        <div class="container team-grid">
-          <article class="team-card" data-reveal>
-            <div class="team-card__photo">Photo — Aarin Pathak</div>
-            <h2 style="font-family: var(--font-display); font-size: 1.25rem; margin: 0 0 0.35rem">
-              Aarin Pathak
-            </h2>
-            <p class="muted" style="font-size: 0.92rem">Founder &amp; President</p>
-            <p class="muted" style="margin-top: 0.75rem">
-              Replace with a tight two-sentence arc: why Project Thrive exists,
-              what you’re optimizing for, how you show up in camps.
+      <!-- Founder -->
+      <section class="section section--paper" aria-labelledby="founder-title">
+        <div class="container founder founder--featured">
+          <div class="founder__photo" data-reveal>
+            <img
+              src="images/team/aarin-pathak.jpg"
+              alt="Aarin Pathak, founder of Project Thrive"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+          <div data-reveal>
+            <p class="eyebrow">Founder</p>
+            <h2 class="founder__name" id="founder-title">Aarin Pathak</h2>
+            <p class="founder__role">Founder · Student at NPS Indiranagar</p>
+            <div class="prose mt-md">
+              <p>
+                A dedicated student at <strong>NPS Indiranagar</strong>, Aarin embodies
+                the transformative potential of youth leadership in addressing complex
+                social challenges. Passionate about cricket, he brings the same
+                strategic thinking and team-oriented approach from sports to social
+                initiatives.
+              </p>
+              <p>
+                At the heart of Aarin’s work is a fundamental belief that
+                <strong>financial literacy should be accessible to all</strong>.
+                Through Project Thrive, he demonstrates how youth-led initiatives can
+                create meaningful change in communities where financial knowledge has
+                traditionally been scarce.
+              </p>
+            </div>
+            <div class="btn-row">
+              <a
+                class="link-arrow"
+                href="https://www.linkedin.com/in/aarin-pathak-18a8a031b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Connect on LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Owner -->
+      <section class="section section--mist" aria-labelledby="owner-title">
+        <div class="container founder founder--owner">
+          <div data-reveal>
+            <p class="eyebrow">Ownership · Operations</p>
+            <h2 class="founder__name" id="owner-title">Yashvy Bhawnani</h2>
+            <p class="founder__role">Owner · Head of Operations &amp; Logistics</p>
+            <div class="prose mt-md">
+              <p>
+                Hi! I’m Yashvy, a senior at Greenwood High. I’m deeply passionate about
+                economic education, creating meaningful change, and helping
+                underprivileged youth. My goal is to inspire youth leaders to step
+                forward, take responsibility, and contribute towards the bigger
+                picture while growing personally and professionally.
+              </p>
+            </div>
+            <div class="btn-row">
+              <a
+                class="link-arrow"
+                href="https://www.linkedin.com/in/yashvy-bhawnani-567b6a3a3/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Connect on LinkedIn</a
+              >
+            </div>
+          </div>
+          <div class="founder__photo" data-reveal>
+            <img
+              src="images/team/yashvy-bhawnani.jpg"
+              alt="Yashvy Bhawnani, owner and head of operations and logistics"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership grid -->
+      <section class="section section--forest on-dark" aria-labelledby="leaders-title">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div data-reveal>
+              <p class="eyebrow">Leadership</p>
+              <h2 class="title" id="leaders-title">Department heads.</h2>
+            </div>
+            <p class="lede" data-reveal>
+              Marketing, partnerships, training, content, finance, operations and
+              social — the team that makes camps possible.
             </p>
-          </article>
-          <article class="team-card" data-reveal>
-            <div class="team-card__photo">Photo — Chief of Operations</div>
-            <h2 style="font-family: var(--font-display); font-size: 1.25rem; margin: 0 0 0.35rem">
-              Name TBD
-            </h2>
-            <p class="muted" style="font-size: 0.92rem">Chief of Operations</p>
-            <p class="muted" style="margin-top: 0.75rem">
-              Brief on logistics, partner cadence, safeguarding, and volunteer
-              orchestration.
-            </p>
-          </article>
-          <article class="team-card" data-reveal>
-            <div class="team-card__photo">Photo — Program Lead</div>
-            <h2 style="font-family: var(--font-display); font-size: 1.25rem; margin: 0 0 0.35rem">
-              Role placeholder
-            </h2>
-            <p class="muted" style="font-size: 0.92rem">Head of Programs</p>
-            <p class="muted" style="margin-top: 0.75rem">
-              Curriculum ownership, trainer rehearsal, multilingual quality bar.
-            </p>
-          </article>
-          <article class="team-card" data-reveal>
-            <div class="team-card__photo">Photo — Partnerships</div>
-            <h2 style="font-family: var(--font-display); font-size: 1.25rem; margin: 0 0 0.35rem">
-              Role placeholder
-            </h2>
-            <p class="muted" style="font-size: 0.92rem">Partnerships &amp; Alliances</p>
-            <p class="muted" style="margin-top: 0.75rem">
-              Banks, NGOs, RWAs—pipeline hygiene and MOU documentation.
-            </p>
-          </article>
+          </div>
+
+          <ul class="team-grid team-grid--leaders" data-reveal-group>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/vaibhav-reddy.jpg" alt="Vaibhav Reddy" loading="lazy" />
+              </div>
+              <h3>Vaibhav Reddy</h3>
+              <p>Head of Marketing</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/viaan-tripathi.jpg" alt="Viaan Tripathi" loading="lazy" />
+              </div>
+              <h3>Viaan Tripathi</h3>
+              <p>Head of Marketing</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/vamika-menon.jpg" alt="Vamika Menon" loading="lazy" />
+              </div>
+              <h3>Vamika Menon</h3>
+              <p>Head of Partnerships</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/vanya-nath.jpg" alt="Vanya Nath" loading="lazy" />
+              </div>
+              <h3>Vanya Nath</h3>
+              <p>Head of Partnerships</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/aditi-raman.jpg" alt="Aditi Raman" loading="lazy" />
+              </div>
+              <h3>Aditi Raman</h3>
+              <p>Head of Partnerships</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/ayusman-das.jpg" alt="Ayusman Das" loading="lazy" />
+              </div>
+              <h3>Ayusman Das</h3>
+              <p>Head of Volunteer Training</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/antara-agarwal.jpg" alt="Antara Agarwal" loading="lazy" />
+              </div>
+              <h3>Antara Agarwal</h3>
+              <p>Head of Logistics</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/rozanne-neil.jpg" alt="Rozanne Neil" loading="lazy" />
+              </div>
+              <h3>Rozanne Neil</h3>
+              <p>Head of Operations</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/ahana-sharma.jpg" alt="Ahana Sharma" loading="lazy" />
+              </div>
+              <h3>Ahana Sharma</h3>
+              <p>Head of Operations</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/prapti-suthakar.jpg" alt="Prapti Suthakar" loading="lazy" />
+              </div>
+              <h3>Prapti Suthakar</h3>
+              <p>Head of Content &amp; Media</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/aashi-sharma.jpg" alt="Aashi Sharma" loading="lazy" />
+              </div>
+              <h3>Aashi Sharma</h3>
+              <p>Head of Content &amp; Media</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/labanya-sahu.jpg" alt="Labanya Sahu" loading="lazy" />
+              </div>
+              <h3>Labanya Sahu</h3>
+              <p>Head of Social Media</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/sarthak-ghosh.jpg" alt="Sarthak Ghosh" loading="lazy" />
+              </div>
+              <h3>Sarthak Ghosh</h3>
+              <p>Head of Finance</p>
+            </li>
+            <li class="member">
+              <div class="member__photo">
+                <img src="images/team/nakul-srinivas.jpg" alt="Nakul Srinivas" loading="lazy" />
+              </div>
+              <h3>Nakul Srinivas</h3>
+              <p>Head of Finance</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--paper closing" aria-labelledby="join-title">
+        <div class="container" data-reveal>
+          <p class="eyebrow">Join us</p>
+          <h2 class="closing__title" id="join-title">Want to build with this team?</h2>
+          <p class="lede">Volunteering, partnerships and camp support — every role matters.</p>
+          <div class="btn-row">
+            <a class="btn btn--ink" href="get-involved.html#volunteer">Volunteer with us</a>
+            <a class="btn btn--line-ink btn--line" href="contact.html">Get in touch</a>
+          </div>
         </div>
       </section>
     </main>

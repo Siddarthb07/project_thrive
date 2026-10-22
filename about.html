@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="The story behind Project Thrive — a youth-led financial inclusion nonprofit founded in 2024 by Aarin Pathak in Bengaluru."
+    />
+    <meta name="theme-color" content="#0a1f33" />
     <title>About — Project Thrive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-page="about">
@@ -17,168 +19,323 @@
     <div id="site-header"></div>
 
     <main id="main-content">
-      <header class="page-hero container" data-reveal>
-        <p class="eyebrow">About Project Thrive</p>
-        <h1 class="page-hero__title">Our Story: The Inspiration Behind Project Thrive</h1>
-        <p class="page-hero__sub">
-          A journey of empowerment—rooted in the belief that financial inclusion
-          is a prerequisite for dignity and opportunity.
-        </p>
+      <header class="page-hero">
+        <div class="page-hero__media" data-parallax>
+          <img
+            src="https://www.projectthrive.in/lovable-uploads/sobha-4.jpg"
+            alt="Volunteers and domestic workers at a Project Thrive financial literacy session"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="container page-hero__content">
+          <p class="eyebrow eyebrow--light" data-hero-in>About Project Thrive</p>
+          <h1 class="page-hero__title" data-hero-in>Financial knowledge is a right, not a privilege.</h1>
+          <p class="page-hero__sub" data-hero-in>
+            A youth-led nonprofit founded in 2024 to bring financial literacy and
+            inclusion to underserved communities across Bengaluru.
+          </p>
+        </div>
       </header>
 
-      <section class="section">
-        <div class="container prose">
-          <h2 data-reveal>A Journey of Empowerment</h2>
-          <p data-reveal>
-            Project Thrive began with conversations in communities where banking
-            halls felt intimidating, schemes sounded like jargon, and emergencies
-            became crises. Our work meets people where they are—campus halls,
-            neighborhood courtyards, and trusted NGO partners—so learning feels
-            practical, not performative.
-          </p>
-          <h2 data-reveal>The Realization</h2>
-          <p data-reveal>
-            Access isn’t only about having a branch nearby. It’s about
-            confidence: knowing how to open and use an account, how insurance
-            protects a family, how pensions quietly secure a parent’s older age,
-            and how digital tools can be safe allies rather than threats.
-          </p>
+      <!-- Origin story -->
+      <section class="section section--paper" id="story" aria-labelledby="story-title">
+        <div class="container split split--wide-left split--top">
+          <div data-reveal>
+            <p class="eyebrow">Our story</p>
+            <h2 class="title" id="story-title">A journey of empowerment.</h2>
+            <div class="prose mt-md">
+              <p>
+                <em>“It all began with a simple observation…”</em> Aarin, the founder
+                of Project Thrive, noticed his mother paying their housemaid’s salary
+                in cash. When he asked why, she explained that
+                <strong>the housemaid did not have a bank account.</strong>
+              </p>
+              <p>
+                This revelation was striking — it highlighted the reality faced by
+                many domestic workers in India who have never stepped into a bank,
+                used an ATM, or transacted with a bank account.
+              </p>
+            </div>
+            <div class="callout">
+              <h3>The realization</h3>
+              <p class="muted">
+                Countless individuals in underserved communities lack access to basic
+                financial tools that many take for granted. Without such tools, they
+                remain excluded from opportunities that could help them save, grow,
+                and secure their futures.
+              </p>
+            </div>
+            <div class="prose">
+              <p>
+                With a mission to bridge this gap, Aarin founded Project Thrive — a
+                nonprofit initiative dedicated to promoting financial literacy and
+                inclusion. Through workshops, camps, and partnerships with like-minded
+                organizations, we give people the knowledge and tools they need to
+                thrive financially.
+              </p>
+              <p>
+                What started as a single moment of insight has grown into a
+                <strong>movement</strong>, and we continue to work so that everyone
+                has the opportunity to take charge of their financial future.
+              </p>
+            </div>
+          </div>
+
+          <figure data-reveal>
+            <div class="media media--portrait">
+              <img
+                src="https://www.projectthrive.in/lovable-uploads/sobha-1.jpg"
+                alt="A volunteer gives one-on-one financial counselling to a domestic worker"
+                loading="lazy"
+              />
+            </div>
+            <figcaption class="media-caption">
+              One-on-one financial counselling for domestic workers, Sobha Forest Edge.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section section--alt" id="mission">
+      <!-- Mission -->
+      <section class="section section--forest on-dark" id="mission" aria-labelledby="mission-title">
         <div class="container">
-          <h2 class="section__title" data-reveal>Our Mission</h2>
-          <p class="section__sub" data-reveal style="max-width: 40rem">
-            <strong>Your mission statement goes here.</strong> We recommend one
-            or two sentences on who you serve, what change you deliver, and how
-            you measure integrity and impact.
+          <p class="eyebrow" data-reveal>Our mission</p>
+          <h2 class="visually-hidden" id="mission-title">Our mission</h2>
+          <p class="pull-quote" data-reveal style="max-width: 30ch">
+            We envision a society where financial knowledge is not a privilege but a
+            right.
           </p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2 class="section__title" data-reveal>
-            Understanding the Gap: Financial Inclusion in India
-          </h2>
-          <p class="section__sub" data-reveal style="max-width: 44rem">
-            <strong>Add the gaps you want to bridge</strong>—for example:
-            last-mile awareness for government schemes, digital-payment safety,
-            gendered barriers to banking, migrant-worker documentation issues,
-            or thin trust in formal institutions. Replace this copy with your
-            framing.
-          </p>
-          <div class="btn-row" data-reveal>
-            <a class="btn btn--primary" href="get-involved.html">Join our mission</a>
-            <a class="btn btn--ghost" href="impact.html">See measurable impact</a>
+          <div class="split mt-lg">
+            <p class="lede mt-0" data-reveal>
+              We are committed to breaking down the barriers that separate
+              institutional finance from everyday citizens, creating bridges that
+              empower individuals to participate fully in economic opportunities
+              previously beyond their reach.
+            </p>
+            <p class="lede mt-0" data-reveal>
+              Through education, inclusion, and sustained support, we are building
+              resilient communities where economic dignity and opportunity flourish
+              regardless of background.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt">
-        <div class="container grid-2">
-          <article class="card" data-reveal>
-            <p class="eyebrow">Founder</p>
-            <h2 class="section__title" style="font-size: 1.5rem">
-              The Vision Behind Project Thrive — Aarin Pathak
-            </h2>
-            <p class="muted">
-              Founded by Aarin Pathak while at NPS Indiranagar, Project Thrive
-              pairs field execution with institutional partnerships so financial
-              literacy translates into accounts opened, schemes enrolled, and
-              families protected.
-            </p>
-          </article>
-          <article class="card" data-reveal>
-            <p class="eyebrow">Operations</p>
-            <h2 class="section__title" style="font-size: 1.5rem">
-              Chief of Operations
-            </h2>
-            <p class="muted">
-              <strong>Add name and one paragraph.</strong> This role should
-              highlight program delivery, volunteer coordination, partner
-              logistics, and how you keep camps safe, dignified, and effective.
-            </p>
-          </article>
+      <!-- The gap -->
+      <section class="section section--paper" id="gap" aria-labelledby="gap-title">
+        <div class="container split split--wide-right">
+          <figure data-reveal>
+            <div class="media" style="background: #fff; padding: 1rem">
+              <img
+                src="https://www.projectthrive.in/lovable-uploads/bank-account-data.png"
+                alt="Chart of bank account access across Indian states showing the rural–urban divide"
+                loading="lazy"
+                style="object-fit: contain"
+              />
+            </div>
+            <figcaption class="media-caption">Bank account access across Indian states, rural vs urban.</figcaption>
+          </figure>
+          <div data-reveal>
+            <p class="eyebrow">Understanding the gap</p>
+            <h2 class="title" id="gap-title">Financial inclusion in India.</h2>
+            <div class="prose mt-md">
+              <p>
+                While states like Kerala and Karnataka show over 90% bank account
+                penetration, states like Gujarat show significant gaps between rural
+                and urban populations. The persistent rural–urban divide represents
+                millions of families excluded from basic banking — the foundation of
+                financial security.
+              </p>
+              <p>
+                Simply having a bank account is just the first step; true financial
+                inclusion requires understanding how to use these tools effectively.
+                Our programs make sure access to banking becomes genuine financial
+                empowerment.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="methodology">
+      <!-- Founder -->
+      <section class="section section--mist" id="founder" aria-labelledby="founder-title">
+        <div class="container founder">
+          <div class="founder__photo" data-reveal>
+            <img
+              src="images/team/aarin-pathak.jpg"
+              alt="Aarin Pathak, founder of Project Thrive"
+              loading="lazy"
+            />
+          </div>
+          <div data-reveal>
+            <p class="eyebrow">Founder · The vision behind Project Thrive</p>
+            <h2 class="founder__name" id="founder-title">Aarin Pathak</h2>
+            <p class="founder__role">Founder · Student at NPS Indiranagar</p>
+            <div class="prose mt-md">
+              <p>
+                A dedicated student at <strong>NPS Indiranagar</strong>, Aarin embodies
+                the transformative potential of youth leadership in addressing complex
+                social challenges. Passionate about cricket, he brings the same
+                strategic thinking and team-oriented approach from sports to social
+                initiatives.
+              </p>
+              <p>
+                At the heart of Aarin’s work is a fundamental belief that
+                <strong>financial literacy should be accessible to all</strong>.
+                Through Project Thrive, he demonstrates how youth-led initiatives can
+                create meaningful change in communities where financial knowledge has
+                traditionally been scarce.
+              </p>
+            </div>
+            <div class="btn-row">
+              <a
+                class="link-arrow"
+                href="https://www.linkedin.com/in/aarin-pathak-18a8a031b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Connect on LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Four pillars -->
+      <section class="section section--forest on-dark" id="pillars" aria-labelledby="pillars-title">
         <div class="container">
-          <h2 class="section__title" data-reveal>Our Methodology</h2>
-          <p class="section__sub" data-reveal>
-            Four pillars of transformation—each reinforced by multilingual
-            trainers, SOPs for data consent, and post-camp follow-through.
-          </p>
-          <ul class="pillars">
-            <li class="pillar" data-reveal>
-              <strong>Educate</strong>
-              <span
-                >Plain-language curriculum on savings, insurance, pensions, UPI
-                safety, and scheme navigation.</span
-              >
+          <div class="section-head section-head--split">
+            <div data-reveal>
+              <p class="eyebrow">Our methodology</p>
+              <h2 class="title" id="pillars-title">Four pillars of transformation.</h2>
+            </div>
+            <p class="lede" data-reveal>
+              Our evidence-based approach to creating lasting financial empowerment.
+            </p>
+          </div>
+          <div class="steps" style="--cols: 4" data-steps>
+            <div class="steps__line" aria-hidden="true"><span data-steps-line></span></div>
+            <div class="step" data-reveal>
+              <span class="step__num">01</span>
+              <h3>Educate</h3>
+              <p>We demystify financial concepts, translating complex information into accessible knowledge in 5 languages.</p>
+            </div>
+            <div class="step" data-reveal>
+              <span class="step__num">02</span>
+              <h3>Empower</h3>
+              <p>Hands-on workshops and mentorship cultivate financial confidence that transcends generations.</p>
+            </div>
+            <div class="step" data-reveal>
+              <span class="step__num">03</span>
+              <h3>Include</h3>
+              <p>Creating pathways that connect underserved communities with essential financial resources.</p>
+            </div>
+            <div class="step" data-reveal>
+              <span class="step__num">04</span>
+              <h3>Transform</h3>
+              <p>Measuring success through tangible outcomes: reduced vulnerability, increased savings, empowered communities.</p>
+            </div>
+          </div>
+          <div class="btn-row" data-reveal>
+            <a class="link-arrow" href="impact.html">See our approach in action</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners -->
+      <section class="section section--paper" id="partners" aria-labelledby="partners-title">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Our partners</p>
+            <h2 class="title" id="partners-title">Collaborative transformation.</h2>
+          </div>
+          <div class="partners">
+            <article class="partner" data-reveal>
+              <h3>State Bank of India</h3>
+              <p class="partner__role">Banking expertise and service access</p>
+              <p>
+                SBI has been instrumental in facilitating our banking access programs,
+                connecting previously unbanked individuals with formal financial
+                services.
+              </p>
+            </article>
+            <article class="partner" data-reveal>
+              <h3>ACT (APR Charitable Trust)</h3>
+              <p class="partner__role">Enabling community connections</p>
+              <p>
+                ACT has provided crucial implementation support, helping us build
+                meaningful connections within communities and address local needs.
+              </p>
+            </article>
+            <article class="partner" data-reveal>
+              <h3>Sampark NGO</h3>
+              <p class="partner__role">Grassroots outreach</p>
+              <p>
+                Sampark’s grassroots presence extends our financial literacy work to
+                communities that might otherwise remain underserved.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership preview -->
+      <section class="section section--sand" id="team" aria-labelledby="team-title">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div data-reveal>
+              <p class="eyebrow">Our leadership</p>
+              <h2 class="title" id="team-title">Dedicated change-makers.</h2>
+            </div>
+            <p class="lede" data-reveal>
+              From partnerships to camp logistics — the people who make every session
+              possible. Meet the full roster on the team page.
+            </p>
+          </div>
+          <ul class="team-grid" data-reveal-group>
+            <li class="member member--compact">
+              <div class="member__photo">
+                <img src="images/team/yashvy-bhawnani.jpg" alt="Yashvy Bhawnani" loading="lazy" />
+              </div>
+              <h3>Yashvy Bhawnani</h3>
+              <p>Owner · Ops &amp; Logistics</p>
             </li>
-            <li class="pillar" data-reveal>
-              <strong>Empower</strong>
-              <span
-                >Hands-on desks for account opening, e-KYC guidance, and
-                enrollment support.</span
-              >
+            <li class="member member--compact">
+              <div class="member__photo">
+                <img src="images/team/vaibhav-reddy.jpg" alt="Vaibhav Reddy" loading="lazy" />
+              </div>
+              <h3>Vaibhav Reddy</h3>
+              <p>Head of Marketing</p>
             </li>
-            <li class="pillar" data-reveal>
-              <strong>Include</strong>
-              <span
-                >Intentional outreach to women, domestic workers, and migrants
-                often excluded from formal finance narratives.</span
-              >
+            <li class="member member--compact">
+              <div class="member__photo">
+                <img src="images/team/vamika-menon.jpg" alt="Vamika Menon" loading="lazy" />
+              </div>
+              <h3>Vamika Menon</h3>
+              <p>Head of Partnerships</p>
             </li>
-            <li class="pillar" data-reveal>
-              <strong>Transform</strong>
-              <span
-                >Light-touch follow-ups and community anchors so behavior change
-                compounds.</span
-              >
+            <li class="member member--compact">
+              <div class="member__photo">
+                <img src="images/team/ayusman-das.jpg" alt="Ayusman Das" loading="lazy" />
+              </div>
+              <h3>Ayusman Das</h3>
+              <p>Head of Volunteer Training</p>
             </li>
           </ul>
-        </div>
-      </section>
-
-      <section class="section section--alt">
-        <div class="container">
-          <h2 class="section__title" data-reveal>Our Core Volunteer Team</h2>
-          <p class="section__sub" data-reveal>
-            <strong>Add team heads, roles, and short intros.</strong> Until
-            bios ship, deep-dive portraits live on
-            <a href="meet-the-team.html" style="color: var(--violet-700); font-weight: 700"
-              >Meet the Team</a
-            >.
-          </p>
           <div class="btn-row" data-reveal>
-            <a class="btn btn--ghost" href="meet-the-team.html">Meet the team</a>
+            <a class="btn btn--ink" href="meet-the-team.html">Meet the whole team</a>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <h2 class="section__title" data-reveal>Our Partners</h2>
-          <p class="section__sub" data-reveal>
-            Collaborative transformation with banks and community nonprofits.
-          </p>
-          <div class="partner-grid" style="margin-top: 1.5rem">
-            <div class="partner card" data-reveal>
-              <h3>State Bank of India</h3>
-              <p>Banking rails, camp collaboration, and customer service access.</p>
-            </div>
-            <div class="partner card" data-reveal>
-              <h3>ACT (APR Charitable Trust)</h3>
-              <p>Community anchors and trusted on-ground partners.</p>
-            </div>
-            <div class="partner card" data-reveal>
-              <h3>Sampark NGO</h3>
-              <p>Grassroots outreach and participant stewardship.</p>
-            </div>
+      <!-- Closing -->
+      <section class="section section--mist closing" aria-labelledby="closing-title">
+        <div class="container" data-reveal>
+          <p class="eyebrow">Join our mission</p>
+          <h2 class="closing__title" id="closing-title">Be part of the movement.</h2>
+          <p class="lede">Transforming lives through financial literacy and inclusion — with you.</p>
+          <div class="btn-row">
+            <a class="btn btn--ink" href="get-involved.html">Get involved</a>
+            <a class="btn btn--line-ink btn--line" href="impact.html">See our impact</a>
           </div>
         </div>
       </section>

@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Contact Project Thrive — email and phone." />
+    <meta name="theme-color" content="#0a1f33" />
     <title>Contact — Project Thrive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-page="contact">
@@ -17,53 +16,68 @@
     <div id="site-header"></div>
 
     <main id="main-content">
-      <header class="page-hero container" data-reveal>
-        <p class="eyebrow">Contact</p>
-        <h1 class="page-hero__title">Get in Touch</h1>
-        <p class="page-hero__sub">
-          Partnerships, press, and program inquiries—reach the team directly.
-        </p>
+      <header class="page-hero page-hero--short">
+        <div class="page-hero__media" data-parallax>
+          <img
+            src="https://www.projectthrive.in/lovable-uploads/sobha-5.jpg"
+            alt="Volunteers assisting participants at a Project Thrive camp"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="container page-hero__content">
+          <p class="eyebrow eyebrow--light" data-hero-in>Contact</p>
+          <h1 class="page-hero__title" data-hero-in>Let’s talk.</h1>
+          <p class="page-hero__sub" data-hero-in>
+            Connect with us to join the movement, host a camp, or learn more about
+            our initiatives.
+          </p>
+        </div>
       </header>
 
-      <section class="section">
-        <div class="container grid-2">
+      <section class="section section--paper" aria-labelledby="contact-title">
+        <div class="container split split--top">
           <div data-reveal>
-            <h2 class="section__title" style="font-size: 1.5rem">Email</h2>
-            <p class="muted" style="font-size: 1.05rem">
-              <strong>Replace</strong> with your NGO inbox (e.g.
-              <a href="mailto:hello@projectthrive.in" style="color: var(--violet-700)"
-                >hello@projectthrive.in</a
-              >).
-            </p>
-          </div>
-          <div data-reveal>
-            <h2 class="section__title" style="font-size: 1.5rem">Phone</h2>
-            <p class="muted" style="font-size: 1.05rem">
-              <strong>Add</strong> a public WhatsApp-enabled line or call center
-              hours if available.
-            </p>
-          </div>
-          <div data-reveal>
-            <h2 class="section__title" style="font-size: 1.5rem">Location</h2>
-            <p class="muted" style="font-size: 1.05rem">
-              Bengaluru, Karnataka, India — replace with full postal address if
-              you publish one.
-            </p>
-          </div>
-          <div data-reveal>
-            <h2 class="section__title" style="font-size: 1.5rem">Connect with us</h2>
-            <ul class="footer-links" style="margin-top: 0.5rem">
+            <p class="eyebrow">Get in touch</p>
+            <h2 class="title" id="contact-title">Reach the team directly.</h2>
+            <ul class="contact-list mt-md">
               <li>
-                <a href="https://www.instagram.com/project.thrive" target="_blank" rel="noopener"
-                  >Instagram — @project.thrive</a
-                >
+                <span class="contact-list__label">Email</span>
+                <a class="contact-list__value" href="mailto:getinfo_projectthrive@gmail.com">getinfo_projectthrive@gmail.com</a>
               </li>
               <li>
-                <a href="https://projectthrive.in" target="_blank" rel="noopener"
-                  >Web — projectthrive.in</a
-                >
+                <span class="contact-list__label">Phone</span>
+                <a class="contact-list__value" href="tel:+919606728202">+91 96067 28202</a>
               </li>
             </ul>
+          </div>
+
+          <div class="form-panel" data-reveal>
+            <h3>Send a message</h3>
+            <p class="note">Mockup form — messages are not sent yet. Please email us directly for now.</p>
+            <form class="form" id="contact-form" data-mock-form novalidate>
+              <div class="form__row">
+                <label class="field">Your name
+                  <input name="name" type="text" required autocomplete="name" />
+                </label>
+                <label class="field">Email
+                  <input name="email" type="email" required autocomplete="email" />
+                </label>
+              </div>
+              <label class="field">I’m writing about
+                <select name="topic">
+                  <option>Volunteering</option>
+                  <option>Donating</option>
+                  <option>Partnering / hosting a camp</option>
+                  <option>Press &amp; media</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+              <label class="field">Message
+                <textarea name="message" required></textarea>
+              </label>
+              <button class="btn btn--ink btn--block" type="submit">Send message</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
           </div>
         </div>
       </section>
