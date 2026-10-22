@@ -316,6 +316,13 @@ function initVideoPlayers() {
 /* Mock forms                                                          */
 /* ------------------------------------------------------------------ */
 
+const CONTACT_EMAIL = "getinfo_projectthrive@gmail.com";
+
+function openMail({ subject, body }) {
+  const url = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = url;
+}
+
 function initDonateForms() {
   const fmt = new Intl.NumberFormat("en-IN");
   qsa("[data-donate-form]").forEach((form) => {
@@ -333,6 +340,7 @@ function initDonateForms() {
     const update = () => {
       const a = amount();
       submit.textContent = a > 0 ? `Donate ₹${fmt.format(a)}` : "Enter an amount";
+      submit.disabled = a <= 0;
       if (status) status.textContent = "";
     };
 
@@ -346,10 +354,24 @@ function initDonateForms() {
       e.preventDefault();
       const a = amount();
       if (!status) return;
-      status.textContent =
-        a > 0
-          ? `Thank you. In the live site, your ₹${fmt.format(a)} gift would continue to a secure payment page. (Mockup — nothing was charged.)`
-          : "Please choose or enter an amount.";
+      if (a <= 0) {
+        status.textContent = "Please choose or enter an amount.";
+        return;
+      }
+      const pretty = fmt.format(a);
+      status.textContent = `Opening your email to pledge ₹${pretty}…`;
+      openMail({
+        subject: `Donation interest — ₹${pretty}`,
+        body: [
+          "Hi Project Thrive,",
+          "",
+          `I would like to donate ₹${pretty} to support your financial literacy camps.`,
+          "",
+          "Please share payment / UPI details so I can complete the gift.",
+          "",
+          "Thank you,",
+        ].join("\n"),
+      });
     });
     update();
   });
@@ -366,12 +388,57 @@ function initMockForms() {
         qs(":invalid", form)?.focus();
         return;
       }
-      const name = new FormData(form).get("name");
+      const data = new FormData(form);
+      const name = String(data.get("name") || "").trim();
+      const email = String(data.get("email") || "").trim();
+      const isVolunteer = form.id === "volunteer-form";
+      const lines = [];
+      data.forEach((value, key) => {
+        const v = String(value).trim();
+        if (!v) return;
+        lines.push(`${key}: ${v}`);
+      });
       status.classList.remove("is-error");
-      status.textContent = `Thanks${name ? `, ${name}` : ""}! This is a mockup, so nothing was sent — please email getinfo_projectthrive@gmail.com for now.`;
-      form.reset();
+      status.textContent = `Opening your email${name ? `, ${name}` : ""}…`;
+      openMail({
+        subject: isVolunteer
+          ? `Volunteer interest — ${name || "Project Thrive"}`
+          : `Website message — ${name || "Project Thrive"}`,
+        body: [
+          "Hi Project Thrive,",
+          "",
+          isVolunteer
+            ? "I would like to volunteer with Project Thrive."
+            : "I am reaching out via the website contact form.",
+          "",
+          ...lines,
+          "",
+          email ? `Reply to: ${email}` : "",
+          "",
+          "Thank you,",
+          name || "",
+        ]
+          .filter((line, i, arr) => !(line === "" && arr[i - 1] === ""))
+          .join("\n"),
+      });
     });
   });
+}
+
+function initHashScroll() {
+  const go = () => {
+    const hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    const el = qs(hash);
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - (parseInt(getComputedStyle(document.documentElement).getPropertyValue("--header-h"), 10) || 52) - 12;
+    if (lenis) lenis.scrollTo(top, { immediate: false });
+    else window.scrollTo({ top, behavior: "smooth" });
+  };
+  window.addEventListener("hashchange", go);
+  // After layout / fonts / partials settle
+  requestAnimationFrame(() => setTimeout(go, 80));
+  setTimeout(go, 400);
 }
 
 /* ------------------------------------------------------------------ */
@@ -460,6 +527,7 @@ async function boot() {
   initMotion();
   initCounters();
   window.ScrollTrigger?.refresh();
+  initHashScroll();
 }
 
 if (document.readyState === "loading") {
